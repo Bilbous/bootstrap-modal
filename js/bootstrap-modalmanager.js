@@ -339,6 +339,7 @@
 					callback();
 
 			} else if (this.isLoading && this.$backdropHandle) {
+				return true; //Want to block click on modal loading
 				this.$backdropHandle.removeClass('in');
 
 				var that = this;
